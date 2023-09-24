@@ -7,11 +7,18 @@ function calculate(){
     const difference = firstNumber - secondNumber;
     const product = firstNumber * secondNumber;
     const quotient = firstNumber / secondNumber;
+    let max = 0;
+    if (firstNumber>secondNumber) {
+      max = firstNumber; }
+    else {
+      max = secondNumber; }
     alert(
         `Результат:
         Сумма - ${sum},
         Разность - ${difference},
         Произведение - ${product},
-        Деление - ${quotient}`
+        Деление - ${quotient},
+        Максимум - ${max}`
       );
     }
+
